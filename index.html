@@ -52,23 +52,43 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DITL$^2$: Dual-Stage Invariance Transfer Learning for Generalizable Document Image Tampering Localization</h1>
+            <h1 class="title is-1 publication-title">DITL<sup>2</sup>: Dual-Stage Invariance Transfer Learning for Generalizable Document Image Tampering Localization</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Songzeli</a><sup>*</sup>,</span>
+            <!-- Paper authors -->
+                <!-- 第一行作者 -->
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Songze Li</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yunfei Guo</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Shen Chen</a>,</span>
+                <span class="author-block">
+                  <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Bin Li</a><sup>+</sup>,</span>
+                <span class="author-block">
+                  <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Kaiqing Lin</a>
+                </span>
+                <br>
+                  <!-- 第二行作者 -->
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Changsheng Chen</a>,</span>
+                  <span class="author-block">
+                    <a href="SEVENTH AUTHOR PERSONAL LINK" target="_blank">Haodong Li</a>,</span>
+                  <span class="author-block">
+                    <a href="EIGHTH AUTHOR PERSONAL LINK" target="_blank">Taiping</a>,</span>
+                  <span class="author-block">
+                    <a href="NINTH AUTHOR PERSONAL LINK" target="_blank">Shouhong Ding</a>
                   </span>
-                  </div>
+                </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Shenzhen University, Tencent YouTu Lab and Shenzhen MSU-BIT University<br>ACM MM 2025</span>
+                    <span class="eql-cntrb">
+                      <small>
+                        <br>
+                        <sup>*</sup>Indicates Equal Contribution, <sup>+</sup>Indicates Corresponding Author
+                      </small>
+                    </span>
                   </div>
-
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
@@ -123,22 +143,21 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser image -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      <figure class="image">
+        <img src="static/images/introduction.png" alt="Project Overview">
+      </figure>
+      <h2 class="subtitle has-text-left">
+        (a) The red region represents natural scene images, while the blue region corresponds to document images. Although the two types of images exhibit significant differences in domain-specific features, they share commonalities in domain-invariant features. The limited scale of document image datasets can be mitigated by incorporating natural scene images to enhance generalization. (b) Our method demonstrates significantly improved generalization performance for DITL.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser image -->
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,7 +167,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Document Image Tampering Localization (DITL) advances considerably, yet achieving robust generalization remains a formidable challenge for practical applications. Expanding existing document datasets for training is labor-intensive, making it appealing to incorporate data from non-document domains such as natural scene images. However, domain-specific variations, including differences in color distribution and texture, compromise the performance of joint training. To address this issue, we propose DITL<sup>2</sup>, a <b>D</b>ual-stage <b>I</b>nvariance <b>T</b>ransfer <b>L</b>earning framework for <b>D</b>ocument <b>I</b>mage <b>T</b>ampering <b>L</b>ocalization that consists of Cross-Domain Invariance Pre-training (CDIP) and Frequency Decoupling Parameter Adaptation (FDPA). In the pre-training stage, CDIP employs style transfer and texture consistency learning to suppress domain-specific influences from tampered natural scene images, and tampering trace commonality learning to acquire domain-invariant features. In the fine-tuning stage, FDPA adapts the parameters of the pre-trained model, leveraging the general knowledge from the pre-trained model to address DITL tasks while reducing the risk of overfitting. Experiments show that this approach effectively leverages external data resources to boost model performance, achieving state-of-the-art results across a variety of cross-dataset settings.
           </p>
         </div>
       </div>
@@ -163,98 +182,32 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Usage.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Usage of the project.
-        </h2>
+        <div class="item" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
+          <!-- Your image here -->
+          <img src="static/images/overview.png" alt="MY ALT TEXT" style="max-width: 100%; height: auto;">
+          <h2 class="subtitle has-text-centered">
+            The proposed DITL<sup>2</sup> overall framework divides the training into two stages, called CDIP in the pre-training stage and FDPA in the fine-tuning stage.
+          </h2>
+        </div>
+        <div class="item" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
+          <!-- Your image here -->
+          <img src="static/images/CDST.png" alt="MY ALT TEXT" style="max-width: 100%; height: auto;">
+          <h2 class="subtitle has-text-centered">
+            The Cross-Domain Style Transfer framework.
+          </h2>
+        </div>
+        <div class="item" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
+          <!-- Your image here -->
+          <img src="static/images/Train.png" alt="MY ALT TEXT" style="max-width: 60%; height: auto;">
+          <h2 class="subtitle has-text-centered">
+            The architecture of Frequency Decoupling Parameter Adaptation.
+          </h2>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
-  </div>
-</div>
 </div>
 </section>
 <!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
 
 
 
